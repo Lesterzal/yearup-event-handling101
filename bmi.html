@@ -1,0 +1,54 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="header.css">
+  <title>The Calculator App</title>
+</head>
+<body>
+    
+  <header id="header">
+    <div class="logo">
+    <h1>The Calculator App</h1>
+    </div>
+        <ul class="navigation">
+            <li><a href="./index.html">Basic Calculator</a></li>
+            <li><a href="./mortgage.html">Mortgage Calculator</a></li>
+            <li><a href="./bmi.html">Body Mass index Calculator</a></li>
+         </ul>
+
+</header> 
+
+<h1>Body Mass Index Calculator</h1>
+  
+<form action="none" method="post" name="bmiform">
+  <fieldset>
+  <legend>Height and Weight</legend>
+    <label for="pounds">Weight (pounds):</label>
+    <input type="text" name="pounds" id="pounds">
+    <br>
+    <label for="inches">Height (inches):</label>
+    <input type="text" name="inches" id="inches">
+    <br>
+    <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()">Calculate your BMI</button>
+  </fieldset>
+  <fieldset>
+  <legend>BMI</legend>
+    <label for="bmi" id="bmi_label">Your calculated BMI is:</label>
+    <input type="text" name="bmi" id="bmi" readonly="readonly">
+  </fieldset>
+</form>
+</div>
+
+    <p>BMI Categories:
+      <br> Underweight = &#60; 18.5
+      <br> Normal weight = 18.5–24.9
+      <br> Overweight = 25–29.9
+      <br> Obesity = BMI of 30 or greater 
+    </p>
+
+    <script src="./bmi.js"></script>
+</body>
+</html>

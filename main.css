@@ -1,0 +1,10 @@
+body {
+  background: lightblue;
+  padding-top: 150px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#result {
+  padding-top: 12px;
+}
